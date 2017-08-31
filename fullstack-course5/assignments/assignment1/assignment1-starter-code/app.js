@@ -4,8 +4,8 @@
   angular.module('LunchApp', [])
     .controller('LunchController', LunchController);
 
-  LunchController.$inject = ['$scope', '$filter'];
-  function LunchController($scope, $filter) {
+  LunchController.$inject = ['$scope'];
+  function LunchController($scope) {
     $scope.itemEaten = "";
     $scope.validateItemEaten = function() {
       var itemArr = $scope.itemEaten.split(",");
