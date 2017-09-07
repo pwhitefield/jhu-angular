@@ -14,18 +14,19 @@
     <h1>Lunch Checker</h1>
     <div class="container" ng-controller='LunchController'>
       <div class="form-group">
-                  <input type="text"
-                         class="form-control"
-                         ng-model="itemEaten"
-                  >
-         </div>
-         <div class="form-group" >
-             <button class="btn btn-default" ng-click="validateItemEaten()">Check If Too Much</button>
-         </div>
-         <div class="form-group message" >
-           <!-- Your message can go here. -->
-           {{itemCountMsg}}
-         </div>
-   </div>
-</body>
+        <input type="text"
+              class="form-control"
+           ng-model="itemEaten"
+        placeholder="item should be separated by comma"
+        />
+      </div>
+      <div class="form-group" >
+        <button class="btn-default" ng-click="validateItemEaten()">Check If Too Much</button>
+      </div>
+      <div class="form-group message" >
+        <!-- Your message can go here. -->
+        {{itemCountMsg}}
+      </div>
+    </div>
+  </body>
 </html>
